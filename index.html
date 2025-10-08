@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清代文學補充資料：袁枚與紀昀</title>
+    <!-- 載入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 使用 Inter 作為主要字體，並以 Noto Serif TC 作為中文襯線字體，增加古典感 */
+        body {
+            font-family: 'Noto Serif TC', 'Inter', sans-serif;
+            background-color: #f7f7f0; /* 淺米白色背景 */
+        }
+        .accordion-header {
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+        }
+        .accordion-content.expanded {
+            max-height: 2000px; /* 設置一個足夠大的值 */
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        /* 按鈕基礎樣式 */
+        .btn-toggle {
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl p-6 md:p-10 border-t-8 border-yellow-700">
+
+        <!-- 標題 -->
+        <header class="mb-8 border-b pb-4">
+            <h1 class="text-4xl font-bold text-yellow-700 mb-2">清代文學家補充講義</h1>
+            <p class="text-lg text-gray-600">袁枚《子不語》與紀昀《閱微草堂筆記》核心內容互動呈現</p>
+        </header>
+
+        <!-- 互動區塊容器 -->
+        <div id="content-container">
+
+            <!-- 1. 袁枚生平介紹 -->
+            <section class="mb-8 p-6 bg-yellow-50 rounded-lg border border-yellow-200">
+                <h2 class="text-2xl font-bold text-yellow-800 mb-4 border-b-2 border-yellow-700 pb-2">一、袁枚生平介紹 (1716年-1797年)</h2>
+                <p class="text-gray-700 mb-4">
+                    袁枚，字子才，號簡齋，別號隨園老人。浙江錢塘（今杭州）人，清朝大文學家、著名詩人。官至江寧知縣，與紀昀（紀曉嵐）齊名，時稱「<strong class="text-red-600">南袁北紀</strong>」。
+                </p>
+
+                <!-- 可展開/收合：巧斷「姦殺案」 -->
+                <div class="accordion-item mb-3">
+                    <div class="accordion-header flex justify-between items-center bg-yellow-100 p-3 rounded-t-lg font-semibold text-yellow-800 hover:bg-yellow-200" data-target="case-detail">
+                        <span>巧斷「姦殺案」：公審纏足布的奇案</span>
+                        <span class="chevron transform transition-transform duration-300">▼</span>
+                    </div>
+                    <div id="case-detail" class="accordion-content p-0 bg-white rounded-b-lg border border-yellow-200 border-t-0 text-gray-700">
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">案情摘要與袁枚判斷</h3>
+                            <p>一名裁縫之女被姦殺，現場留有一截被咬斷的舌肉。衙役捕獲一名舌頭受傷的貨郎並準備斬首。袁枚認為，兇手若在舌吻過程被咬斷舌頭，必然疼痛難忍，不可能繼續強姦，判斷貨郎非真兇。</p>
+                            <h3 class="font-bold text-lg mt-3 mb-2">審案過程與結果</h3>
+                            <p>袁枚謊稱死者託夢，即將透過**纏足布顯靈**，公開「審判那塊布」，吸引民眾圍觀。他逼迫每個圍觀者觸碰布匹，兩名惶然不安的男子被拘捕。經查，這兩名男子知悉貨郎受傷後，跑去姦殺少女，企圖嫁禍給貨郎。袁縣令智謀特高，兩名男子甘心認罪。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 可展開/收合：祭妹文 -->
+                <div class="accordion-item">
+                    <div class="accordion-header flex justify-between items-center bg-yellow-100 p-3 rounded-t-lg font-semibold text-yellow-800 hover:bg-yellow-200" data-target="sister-detail">
+                        <span>「祭妹文」與袁機生平</span>
+                        <span class="chevron transform transition-transform duration-300">▼</span>
+                    </div>
+                    <div id="sister-detail" class="accordion-content p-0 bg-white rounded-b-lg border border-yellow-200 border-t-0 text-gray-700">
+                        <div class="p-4">
+                            <p>袁機（素文，1720年-1759年）是袁枚的三妹，幼時端麗好讀書。雖未婚夫高繹祖有疾且性情暴躁，袁機仍堅持「夫婿有疾，我字（侍）之；死，我守之」，執意成婚。後因被虐待被父親接回，但仍從一而終。高繹祖死後，她作詩〈追悼〉，不久後病逝於隨園。</p>
+                            <p class="mt-2">袁枚於乾隆三十二年（1767年）寫下著名的<strong class="text-yellow-700">《祭妹文》</strong>。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 2. 《子不語》/《新齊諧》解題與自序 -->
+            <section class="mb-8 p-6 bg-red-50 rounded-lg border border-red-200">
+                <h2 class="text-2xl font-bold text-red-800 mb-4 border-b-2 border-red-700 pb-2">二、《子不語》（《新齊諧》）解題</h2>
+                <div class="text-gray-700 mb-4">
+                    <p class="mb-2">書名取自《論語·述而》：「<strong class="text-red-600">子不語：怪、力、亂、神</strong>。」後因與元人說部雷同，改為《新齊諧》，取自《莊子·逍遙遊》：「《齊諧》者，志怪者也。」</p>
+                    <p class="mb-2">全書共 24 卷，續集 10 卷，與紀曉嵐《閱微草堂筆記》齊名。內容多記述<strong>鬼故事</strong>，來自親友口述、邸報或公文。魯迅評其：「屏去雕飾，反近自然。」</p>
+                </div>
+                
+                <!-- 袁枚自序與語譯切換 -->
+                <div class="mt-6 p-4 bg-white rounded-lg shadow-inner">
+                    <h3 class="text-xl font-bold text-red-700 mb-3">袁枚自序：與「怪力亂神」</h3>
+                    
+                    <div id="original-text-zby" class="text-base text-gray-800 whitespace-pre-wrap leading-relaxed border-l-4 border-red-300 pl-4 mb-4">
+                        <p>「怪、力、亂、神」,子所不語也。然「龍血」、「鬼車」,《繫辭》語之;「玄鳥生商」、「牛羊飼稷」,《雅》、《頌》語之。左丘明親受業於聖人,而內外傳語此四者尤詳,厥何故歟?蓋聖人教人「文、行、忠、信」而已,此外則「未知生,焉知死」、「敬鬼神而遠之」,所以立人道之極也。《周易》取象幽渺,詩人自記祥瑞,左氏恢奇多聞,垂為文章,所以窮天地之變也,其理皆並行而不悖。</p>
+                        <p class="mt-4">余生平寡嗜好,凡飲酒、度曲、樗蒲,可以接群居之歡者,一無能焉,文史外無以自娛,乃廣采遊心駭耳之事,妄言妄聽,記而存之,非有所惑也。譬如嗜味者饜八珍矣,而不廣嚐夫坻醢葵菹則脾困;嗜音者備《咸》、《韶》矣,而不旁及於侏 傑休則耳狹。以妄驅庸,以駭起惰,不有博弈者乎?為之猶賢,是亦裨諶適野之一樂也。昔顏魯公、李鄴侯功在社稷,而好談神怪;韓昌黎以道自任,而喜駁雜無稽之談;徐騎省排斥佛、老,而好采異聞,門下士竟有偽造以取媚者。四賢之長,吾無能為役也;四賢之短,則吾竊取之矣。</p>
+                        <p class="mt-4">書成,初名《子不語》,後見元人說部有雷同者,乃改為《新齊諧》云。</p>
+                    </div>
+
+                    <div id="translation-zby" class="hidden text-base text-red-800 bg-red-100 p-4 rounded-lg border border-red-300">
+                        <h4 class="font-bold mb-2">【語譯】</h4>
+                        <p>古人說：「怪、力、亂、神」，是孔子不談論的。但《繫辭》中提到「龍血」、「鬼車」；《雅》、《頌》中也記載了「玄鳥生商」、「牛羊飼稷」。左丘明師從聖人，而內外傳語對這四者描述尤其詳盡，這是為什麼呢？因為聖人教人的重點是「文、行、忠、信」，此外便是「未知生，焉知死」、「敬鬼神而遠之」，這是確立人倫極致的道理。而《周易》取象幽微，詩人自記祥瑞，左氏廣聞博記，撰寫成文，是為了窮盡天地萬物的變化，這些道理是並行不悖的。</p>
+                        <p class="mt-4">我生平嗜好很少，凡是飲酒、聽曲、博弈等能融入群體歡樂的事，我一概不擅長，除了文史以外無以自娛，於是廣泛採集令人心神遊蕩、聽來駭人的事，姑且聽之記下，並非真被迷惑。就好比美食家飽食八珍後，若不廣嚐蟻卵野菜，脾胃也會感到困頓；喜歡音樂的人聽遍《咸》、《韶》等古典音樂後，若不旁及邊疆少數民族的音樂，耳朵也會顯得狹窄。用奇異來驅散平庸，用驚駭來激發惰性，難道不像下棋那樣是一種娛樂嗎？這樣做也算是適野的一種樂趣。古代的顏魯公、李鄴侯對國家有重大貢獻，但也喜歡談論神怪；韓昌黎以弘揚道義為己任，卻也喜愛駁雜無稽的談論；徐騎省排斥佛、老，但也喜歡採集奇異傳聞。這四位賢者的長處，我沒法企及；但他們的小缺點（指好談怪異），我卻拿來發揮了。</p>
+                        <p class="mt-4">書完成時，初名《子不語》，後來看到元代小說部中有同名的，於是改名為《新齊諧》。</p>
+                    </div>
+
+                    <button id="toggle-zby-btn" class="btn-toggle mt-4 px-4 py-2 bg-red-600 text-white font-bold rounded-full shadow-md hover:bg-red-700 transition duration-300">
+                        顯示語譯
+                    </button>
+                </div>
+            </section>
+            
+            <!-- 3. 紀昀《閱微草堂筆記》與故事補充 -->
+            <section class="mb-8 p-6 bg-blue-50 rounded-lg border border-blue-200">
+                <h2 class="text-2xl font-bold text-blue-800 mb-4 border-b-2 border-blue-700 pb-2">三、補充講義：《閱微草堂筆記》</h2>
+                <div class="text-gray-700 mb-4">
+                    <h3 class="font-bold text-xl text-blue-700 mb-2">作品介紹</h3>
+                    <p class="mb-2">《閱微草堂筆記》為清朝短篇志怪小說，於乾隆五十四年（1789年）至嘉慶三年（1798年）間由**紀昀**（紀曉嵐）以筆記形式編寫而成。與袁枚《子不語》齊名，合稱「<strong class="text-red-600">南袁北紀</strong>」。</p>
+                    <!-- 補足總篇數和總字數資訊 -->
+                    <p class="mb-2">全集分五書，共二十四卷，共收錄 **1249則** 故事，約 **40萬字**。內容主要搜輯當時代前後的鬼神狐仙、奇聞軼事等，範圍遍及全中國。與蒲松齡《聊齋誌異》、袁枚《新齊諧》並名當世。</p>
+                </div>
+
+                <!-- 補上：可展開/收合 五書詳細結構 -->
+                <div class="accordion-item mb-3">
+                    <div class="accordion-header flex justify-between items-center bg-blue-100 p-3 rounded-t-lg font-semibold text-blue-800 hover:bg-blue-200" data-target="five-books-detail">
+                        <span>五書結構與創作時間 (共24卷)</span>
+                        <span class="chevron transform transition-transform duration-300">▼</span>
+                    </div>
+                    <div id="five-books-detail" class="accordion-content p-0 bg-white rounded-b-lg border border-blue-200 border-t-0 text-gray-700">
+                        <div class="p-4 space-y-2">
+                            <p><strong class="font-semibold text-blue-700">書一：《灤陽消夏錄》</strong>（六卷，卷一至卷六）：乾隆五十四年（1789年）作。</p>
+                            <p><strong class="font-semibold text-blue-700">書二：《如是我聞》</strong>（四卷，卷七至卷十）：乾隆五十六年（1791年）作。</p>
+                            <p><strong class="font-semibold text-blue-700">書三：《槐西雜志》</strong>（四卷，卷十一至卷十四）：乾隆五十七年（1792年）作。</p>
+                            <p><strong class="font-semibold text-blue-700">書四：《姑妄聽之》</strong>（四卷，卷十五至卷十八）：乾隆五十八年（1793年）作。</p>
+                            <p><strong class="font-semibold text-blue-700">書五：《灤陽續錄》</strong>（六卷，卷十九至卷二十四）：嘉慶三年（1798年）作。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 故事：自污救人 (更新標題) -->
+                <div class="mt-6 p-4 bg-white rounded-lg shadow-inner">
+                    <h3 class="text-xl font-bold text-blue-700 mb-3">故事補充：自污救人 (閱微草堂筆記卷四·灤陽消夏錄四)</h3>
+                    
+                    <div id="original-text-ywc" class="text-base text-gray-800 whitespace-pre-wrap leading-relaxed border-l-4 border-blue-300 pl-4 mb-4">
+                        <p>農夫陳四,夏夜在團焦守瓜田,遙見老柳樹下,隱隱有數人影,疑盜瓜者,假寐聽之。中一人曰:「不知陳四已睡未?」又一人曰:「陳四不過數日即來從我輩游,何畏之有?昨上直土神祠,見城隍牒矣。」又一人曰:「君不知耶?陳四延壽矣。」眾問何故,曰:「某家失錢二千文,其婢鞭箠數百未承。婢之父亦憤曰:『生女如是,不如無。倘果盜,吾必縊殺之。』婢曰:『是不承死,承亦死也。』呼天泣。</p>
+                        <p class="mt-2">陳四之母憐之,陰典衣得錢二千,捧還主人曰:『老婦昏慣,一時見利取此錢,意謂主人積錢多,未必遽算出,不料累此婢,心實惶愧,錢尚未用,謹冒死自首,免結來世冤。老婦亦無顏居此,請從此辭。』婢因得免。土神嘉其不辭自污以救人,達城隍,城隍達東嶽,東嶽檢籍,此婦當老而喪子,凍餓死。以是功德,判陳四借來生之壽於今生,俾養其母。爾昨下直,未知也。」陳四方竊憤母以盜錢見逐,至是乃釋然。</p>
+                        <p class="mt-2">後九年母死,葬事畢,無疾而逝。</p>
+                    </div>
+
+                    <div id="translation-ywc" class="hidden text-base text-blue-800 bg-blue-100 p-4 rounded-lg border border-blue-300">
+                        <h4 class="font-bold mb-2">【語譯與解讀】</h4>
+                        <p>農夫陳四的母親，看到婢女因被誣陷偷錢而面臨鞭打甚至被父親勒死的危險，心生憐憫。她偷偷典當衣物湊足了兩千文錢，主動向主人承認是自己一時貪心偷竊，並將錢歸還，甘願被辭退。婢女因此得救。土地神嘉許她<strong class="text-blue-700">「不辭自污以救人」</strong>的功德，層層上報至東嶽大帝。東嶽大帝查閱簿冊，得知老婦人原本會「老而喪子，凍餓死」，因這功德，判決陳四借用來生的壽命於今生，讓他能奉養母親。</p>
+                        <p class="mt-2">陳四原本還對母親「偷錢」被辭退感到不滿，聽聞鬼神之言才釋懷。九年後，母親過世，辦完喪事，陳四便無疾而終。</p>
+                        <p class="mt-2 font-bold text-red-600">【文本解讀】</p>
+                        <p>故事的核心在於行善的方式是<strong class="text-red-600">犧牲名譽與生計</strong>。陳母的善行不是金錢施捨，而是甘願背負「賊」的惡名來救人，連兒子都誤會怨恨。她獲得的報答是兒子多活九年，得以老有所依、有人送終，體現了非同尋常的「善有善報」。</p>
+                    </div>
+
+                    <button id="toggle-ywc-btn" class="btn-toggle mt-4 px-4 py-2 bg-blue-600 text-white font-bold rounded-full shadow-md hover:bg-blue-700 transition duration-300">
+                        顯示語譯與解讀
+                    </button>
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // ----------------------------------------------------
+            // 1. 處理可展開/收合 (Accordion) 邏輯
+            // ----------------------------------------------------
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const targetId = header.getAttribute('data-target');
+                    const targetContent = document.getElementById(targetId);
+                    const chevron = header.querySelector('.chevron');
+
+                    // 檢查目標內容是否已展開
+                    const isExpanded = targetContent.classList.contains('expanded');
+
+                    // 隱藏所有內容
+                    document.querySelectorAll('.accordion-content').forEach(content => {
+                        content.classList.remove('expanded');
+                        content.style.maxHeight = '0';
+                    });
+                    document.querySelectorAll('.chevron').forEach(c => {
+                        c.style.transform = 'rotate(0deg)';
+                    });
+
+                    // 如果原本未展開，則展開目標內容
+                    if (!isExpanded) {
+                        targetContent.classList.add('expanded');
+                        // 設置 max-height 以啟用 CSS transition
+                        // 注意：這裡使用 scrollHeight + 20px 確保內容能完全顯示，避免內容邊緣被裁剪
+                        targetContent.style.maxHeight = targetContent.scrollHeight + 20 + 'px'; 
+                        chevron.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+
+            // ----------------------------------------------------
+            // 2. 處理原文與語譯切換 (Toggle) 邏輯
+            // ----------------------------------------------------
+            
+            // 袁枚自序切換
+            const toggleZbyBtn = document.getElementById('toggle-zby-btn');
+            const originalTextZby = document.getElementById('original-text-zby');
+            const translationZby = document.getElementById('translation-zby');
+
+            toggleZbyBtn.addEventListener('click', () => {
+                const isShowingTranslation = toggleZbyBtn.textContent.includes('顯示語譯');
+                
+                if (isShowingTranslation) {
+                    originalTextZby.classList.add('hidden');
+                    translationZby.classList.remove('hidden');
+                    toggleZbyBtn.textContent = '顯示原文';
+                    toggleZbyBtn.classList.remove('bg-red-600', 'hover:bg-red-700');
+                    toggleZbyBtn.classList.add('bg-gray-500', 'hover:bg-gray-600');
+                } else {
+                    originalTextZby.classList.remove('hidden');
+                    translationZby.classList.add('hidden');
+                    toggleZbyBtn.textContent = '顯示語譯';
+                    toggleZbyBtn.classList.add('bg-red-600', 'hover:bg-red-700');
+                    toggleZbyBtn.classList.remove('bg-gray-500', 'hover:bg-gray-600');
+                }
+            });
+
+            // 自污救人切換
+            const toggleYwcBtn = document.getElementById('toggle-ywc-btn');
+            const originalTextYwc = document.getElementById('original-text-ywc');
+            const translationYwc = document.getElementById('translation-ywc');
+
+            toggleYwcBtn.addEventListener('click', () => {
+                const isShowingTranslation = toggleYwcBtn.textContent.includes('顯示語譯');
+
+                if (isShowingTranslation) {
+                    originalTextYwc.classList.add('hidden');
+                    translationYwc.classList.remove('hidden');
+                    toggleYwcBtn.textContent = '顯示原文';
+                    toggleYwcBtn.classList.remove('bg-blue-600', 'hover:bg-blue-700');
+                    toggleYwcBtn.classList.add('bg-gray-500', 'hover:bg-gray-600');
+                } else {
+                    originalTextYwc.classList.remove('hidden');
+                    translationYwc.classList.add('hidden');
+                    toggleYwcBtn.textContent = '顯示語譯與解讀';
+                    toggleYwcBtn.classList.add('bg-blue-600', 'hover:bg-blue-700');
+                    toggleYwcBtn.classList.remove('bg-gray-500', 'hover:bg-gray-600');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
